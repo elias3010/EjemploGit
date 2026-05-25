@@ -1,0 +1,66 @@
+// importás los módulos con @use
+@use 'variables' as vars;
+@use 'layout' as lay;
+
+body {
+  font-family: vars.$fuentePrincipal;
+  font-size: vars.$fuenteTamaño;
+  background-color: vars.$colorSecundario;
+  margin: none;
+}
+
+/* header */
+.header {
+  @include lay.centrar-flex;
+  justify-content: space-between;
+  background-color: vars.$colorOscuro;
+  padding: 20px;
+  color: white;
+
+    nav{
+        display: flex;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+
+        &:hover {
+            color: vars.$colorPrimario;
+    }
+  }
+}
+
+/* contenedor */
+.contenedor {
+  @include lay.centrar-flex;
+  background-color: vars.$colorPrimario;
+  padding: 20px;
+  color: white;
+}
+
+/* boton */
+.boton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: white;
+  color: vars.$colorPrimario;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: vars.$colorHover;
+    color: white;
+  }
+}
+
+/* footer */
+.footer {
+  @include lay.centrar-flex;
+  background-color: vars.$colorOscuro;
+  color: white;
+  padding: 20px;
+}

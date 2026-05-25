@@ -1,0 +1,11 @@
+// variables públicas — accesibles desde otros archivos
+$colorPrimario: #3b38f1;
+$colorSecundario: #f5f5f5;
+$colorOscuro: #222;
+$colorHover: #1a18c4;
+$fuentePrincipal: 'Roboto', sans-serif;
+$fuenteTamaño: 16px;
+
+// variables privadas — solo se usan dentro de este archivo
+$-colorInterno: #333;
+$-espaciado: 10px;
