@@ -1,12 +1,12 @@
-// importás los módulos con @use
 @use 'variables' as vars;
 @use 'layout' as lay;
+@use "card" as card;
 
 body {
   font-family: vars.$fuentePrincipal;
   font-size: vars.$fuenteTamaño;
   background-color: vars.$colorSecundario;
-  margin: none;
+  margin: 0;
 }
 
 /* header */

@@ -1,8 +1,40 @@
+.card {
+  background-color: #0b54ba;
+  border: 1px solid #eff1f5;
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+}
+.card__title {
+  color: #eff4fa;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card__button {
+  background-color: #293d58;
+  color: #eff4fa;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card__button:hover {
+  background-color: #1a18c4;
+}
+.card--highlighted {
+  background-color: #ff0000;
+}
+.card__content {
+  color: #eff4fa;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #f5f5f5;
-  margin: none;
+  margin: 0;
 }
 
 /* header */
